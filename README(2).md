@@ -104,6 +104,8 @@ The output can contain information such as:
 
 The `whois` command demonstrated how domain registration information can be collected during the initial reconnaissance stage.
 
+![Whois](screenshot-whois.png)
+
 ---
 
 ## Task 2 — Web Technology Fingerprinting using WhatWeb
@@ -138,6 +140,8 @@ WhatWeb can identify technologies such as:
 
 The scan provided an overview of the technologies used by the target web application.
 
+![WhatWeb](screenshot-whatweb.png)
+
 ---
 
 ## Task 3 — Domain to IP Resolution using Nslookup
@@ -169,6 +173,8 @@ The command can provide:
 ### Result
 
 The domain was successfully resolved to its associated IP address through DNS lookup.
+
+![Nslookup](screenshot-nslookup.png)
 
 ---
 
@@ -203,6 +209,8 @@ HTTP response headers can provide information such as:
 
 The HTTP response headers were examined to understand how the target web server responds to requests.
 
+![cURL](screenshot-curl.png)
+
 ---
 
 ## Task 5 — Web Application Firewall Detection using Wafw00f
@@ -232,6 +240,8 @@ The tool attempts to determine:
 ### Result
 
 The WAF detection process provided information about the security layer protecting the web application.
+
+![Wafw00f](screenshot-wafw00f.png)
 
 ---
 
@@ -267,6 +277,8 @@ DNSRecon can identify DNS information such as:
 
 The DNS enumeration process provided a broader view of the target's DNS infrastructure.
 
+![DNSRecon](screenshot-dnsrecon.png)
+
 ---
 
 # Part 2 — Network Scanning with Zenmap
@@ -294,8 +306,6 @@ The following information was obtained from the Zenmap network scan:
 - Saved scan output in PDF format
 
 The actual scan results and screenshots will be added to the repository as evidence of the completed practical exercise.
-
-### Zenmap Scan
 
 ![Zenmap Scan](screenshot-zenmap.png)
 
@@ -363,48 +373,6 @@ DNS Record Enumeration
 
 ---
 
-# Commands Used
-
-## Footprinting Commands
-
-### Whois
-
-```bash
-whois <target-domain>
-```
-
-### WhatWeb
-
-```bash
-whatweb <target-domain>
-```
-
-### Nslookup
-
-```bash
-nslookup <target-domain>
-```
-
-### cURL
-
-```bash
-curl -I https://<target-domain>
-```
-
-### Wafw00f
-
-```bash
-wafw00f <target-domain>
-```
-
-### DNSRecon
-
-```bash
-dnsrecon -d <target-domain>
-```
-
----
-
 ## Network Scanning with Zenmap
 
 Zenmap was used as the graphical interface for the network discovery and scanning exercise. The resulting host information and network topology were reviewed and saved as part of the practical documentation.
@@ -438,38 +406,6 @@ Zenmap was used to:
 - Record IP addresses.
 - Identify MAC addresses where available.
 - Save network discovery results for documentation.
-
----
-
-# Lab Screenshots
-
-Screenshots documenting the practical work will be added to this section.
-
-## Footprinting
-
-### Whois
-
-![Whois](screenshot-whois.png)
-
-### WhatWeb
-
-![WhatWeb](screenshot-whatweb.png)
-
-### Nslookup
-
-![Nslookup](screenshot-nslookup.png)
-
-### cURL
-
-![cURL](screenshot-curl.png)
-
-### Wafw00f
-
-![Wafw00f](screenshot-wafw00f.png)
-
-### DNSRecon
-
-![DNSRecon](screenshot-dnsrecon.png)
 
 ---
 
