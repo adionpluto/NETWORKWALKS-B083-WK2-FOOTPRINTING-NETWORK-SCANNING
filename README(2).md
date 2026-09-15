@@ -25,11 +25,6 @@ The project aims to:
 - Inspect HTTP response headers using `curl`.
 - Detect Web Application Firewalls using `wafw00f`.
 - Enumerate DNS records using `dnsrecon`.
-- Identify the local IP address and subnet in Kali Linux.
-- Discover live hosts within an authorized network.
-- Determine the number of active hosts in a subnet.
-- Identify the IP addresses of discovered hosts.
-- Identify MAC addresses of hosts where available.
 - Use **Nmap** for network discovery and scanning.
 - Document the results obtained during the reconnaissance and scanning process.
 
@@ -91,7 +86,7 @@ whois <target-domain>
 ### Example
 
 ```bash
-whois example.com
+whois networkwalks.com
 ```
 
 ### Information Observed
@@ -124,7 +119,7 @@ whatweb <target-domain>
 ### Example
 
 ```bash
-whatweb example.com
+whatweb networkwalks.com
 ```
 
 ### Information Observed
@@ -158,7 +153,7 @@ nslookup <target-domain>
 ### Example
 
 ```bash
-nslookup example.com
+nslookup networkwalks.com
 ```
 
 ### Information Observed
@@ -190,7 +185,7 @@ curl -I https://<target-domain>
 ### Example
 
 ```bash
-curl -I https://example.com
+curl -I https://networkwalks.com
 ```
 
 ### Information Observed
@@ -223,7 +218,7 @@ wafw00f <target-domain>
 ### Example
 
 ```bash
-wafw00f example.com
+wafw00f networkwalks.com
 ```
 
 ### Information Observed
@@ -253,7 +248,7 @@ dnsrecon -d <target-domain>
 ### Example
 
 ```bash
-dnsrecon -d example.com
+dnsrecon -d networkwalks.com
 ```
 
 ### Information Observed
@@ -302,11 +297,7 @@ The actual scan results and screenshots will be added to the repository as evide
 
 ### Zenmap Scan
 
-![Zenmap Scan](screenshot-zenmap-scan.png)
-
-### Network Topology
-
-![Network Topology](screenshot-network-topology.png)
+![Zenmap Scan](screenshot-zenmap.png)
 
 ### Saved PDF Output
 
@@ -482,34 +473,6 @@ Screenshots documenting the practical work will be added to this section.
 
 ---
 
-## Network Scanning
-
-### Local IP and Subnet
-
-![IP Configuration](screenshot-ip-address.png)
-
-### Nmap Host Discovery
-
-![Nmap Host Discovery](screenshot-nmap-host-discovery.png)
-
-### Live Hosts
-
-![Live Hosts](screenshot-live-hosts.png)
-
-### MAC Address Discovery
-
-![MAC Addresses](screenshot-mac-addresses.png)
-
-### Saved Nmap Results
-
-![Nmap Results](screenshot-nmap-results.png)
-
-### Network Topology
-
-![Network Topology](screenshot-network-topology.png)
-
----
-
 # What I Learned
 
 This project provided practical experience with the reconnaissance and network discovery stages of a cybersecurity assessment.
@@ -542,17 +505,9 @@ Using Wafw00f, I learned how security researchers can identify the presence of a
 
 Using Zenmap, I learned how graphical network scanning can be used to identify active systems within an authorized network and determine their IP addresses.
 
-### 8. MAC Address Discovery
-
-I learned how MAC addresses can be obtained during local network discovery when the network environment allows Layer 2 information to be observed.
-
-### 9. Network Topology
+### 8. Network Topology
 
 The scanning process helped me understand how devices within a network can be identified and represented as part of a basic network topology.
-
-### 10. Documentation
-
-I learned the importance of recording commands, results, screenshots, network information, and observations throughout a cybersecurity assessment.
 
 ---
 
